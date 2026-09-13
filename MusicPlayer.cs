@@ -126,7 +126,9 @@ public class QueueController
     }
     public static void AddToQueue(string songName)
     {
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
         string foundPath = MusicPlayer.NameChecker(songName);
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
         if (foundPath != null)
         {
