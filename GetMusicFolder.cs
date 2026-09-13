@@ -3,10 +3,9 @@ using System.IO;
 using System.Linq;
 public class GetMusic
 {
-
-    private static string FolderCheckerAndSender()
+    public static string FolderCheckerAndSender()
     {
-        string pather = @"music";
+        string pather = @"Music";
         if (Directory.Exists(pather))
         {
             return pather;
