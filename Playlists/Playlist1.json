@@ -1,0 +1,6 @@
+{
+		"PlaylistName": "Hello",
+		"PlaylistDescription": "Test",
+		"PlaylistImage": "",
+		"Songs": ["Test", "testtoo", "Hello"]
+}
