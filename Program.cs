@@ -106,7 +106,7 @@ public class MainProgram
                 if (playlistInput.HasValue && playlistInput.Value > 0 && playlistInput.Value <= playlists.Length)
                 {
                     string selectedPlaylistPath = playlists[playlistInput.Value - 1];
-                    var playlistContents = PlaylistsSystem.GetPlaylistContents(selectedPlaylistPath);
+                    string[] playlistContents = PlaylistsSystem.GetPlaylistContents(selectedPlaylistPath);
                     Console.WriteLine($"Playlist: {playlistContents[0]}");
                     Console.WriteLine($"Description: {playlistContents[1]}");
                     Console.WriteLine($"Image: {playlistContents[2]}");
@@ -115,6 +115,7 @@ public class MainProgram
                     for (int i = 0; i < songs.Length; i++)
                     {
                         Console.WriteLine($"{i + 1}. {Path.GetFileName(songs[i])}");
+    
                     }
                 }
                 else if (playlistInput == 0)

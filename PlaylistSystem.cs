@@ -43,7 +43,7 @@ public static class PlaylistsSystem
         return Directory.GetFiles("Playlists", "*.json");
     }
     
-    public static object[] GetPlaylistContents(string playlistFilePath)
+    public static string[] GetPlaylistContents(string playlistFilePath)
     {
         if (!File.Exists(playlistFilePath))
         {
@@ -54,13 +54,14 @@ public static class PlaylistsSystem
         var playlist = System.Text.Json.JsonSerializer.Deserialize<DefaultPlaylist>(json);
 
 #pragma warning disable CS8601 // Possible null reference assignment.
-        object[] Info =
+        string[] Info =
         {
             playlist?.PlaylistName,
             playlist?.PlaylistDescription,
             playlist?.PlaylistImage,
-            playlist?.Songs,
+            string.Join(",", playlist?.Songs ?? new List<string>()),
         };
+        
 #pragma warning restore CS8601 // Possible null reference assignment.
 
         return Info;

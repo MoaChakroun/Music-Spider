@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Music-Spider")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+51e04e799b10a140dd8a9668c292932b8bfc85c3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b251785cee809b260d5223bc582d1cd414ab071")]
 [assembly: System.Reflection.AssemblyProductAttribute("Music-Spider")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Music-Spider")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
